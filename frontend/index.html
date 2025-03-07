@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM Chatbot</title>
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background: #f0f4f8;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      header {
+        background: #fff;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      header img {
+        display: block;
+        margin: 0 auto 10px;
+        width: 80px;
+        height: 80px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+      #root {
+        flex: 1;
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+     <img src="LV_Logo.svg" alt="LV Logo" class="logo-large">
+      <h1>We Listen & We Don't Judge</h1>
+    </header>
+
+<section class="always-chat" style="text-align: center; margin: 20px 0;">
+  <img src="Chat.svg" alt="Chat Icon" class="chat-icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+  <h2 style="font-size: 1.5rem; margin-top: 10px;color: #4CAF50;">Always Available to Chat</h2>
+</section>
+
+<section class="clear-mind" style="text-align: center; margin: 20px 0;">
+  <img src="Mind.svg" alt="Mind Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+  <h2 style="font-size: 1.5rem; margin-top: 10px;color: #4CAF50;">Clear Your Mind</h2>
+</section>
+
+<section class="privacy-secured" style="text-align: center; margin: 20px 0;">
+  <img src="Blocks.svg" alt="Blockchain Icon" style="width: 80px; height: 80px; display: block; margin: 0 auto;">
+  <h2 style="font-size: 1.5rem; margin-top: 10px;color: #4CAF50;">Privacy Secured on Blockchain</h2>
+</section>
+
+
+    <div id="root"></div>
+    <script type="module" src="src/main.jsx"></script>
+  </body>
+  
+</html>

@@ -1,9 +1,39 @@
-# LLM Chatbot
+# Let's Vent
 
-![LLM Chatbot](https://icp.ninja/examples/_attachments/llm_chatbot.png)
 
-The LLM Chatbot example demonstrates how an ICP smart contract can be used to interact with a large language model (LLM) to generate text. The user can input a prompt, and the smart contract will use the LLM to generate a response.
-The response is then returned to the user, and the user can submit some follow-up prompts to continue the conversation.
+
+## The Let's vent Chatbot Emotional Support Chatbot with CBT Techniques
+A friendly chatbot that listens to user feelings, detects sentiment, and responds with structured prompts inspired by Cognitive Behavioral Therapy (CBT). The bot is not a substitute for professional mental health care—it’s more like a supportive friend that uses evidence-based conversation techniques.
+
+## Table of Contents
+- Overview
+- Key Features
+- How It Works
+- Project Structure
+- Usage
+- Structured Prompting & CBT
+- Disclaimer
+- Contributing
+
+
+## Overview
+This project aims to provide a welcoming environment where users can openly express their emotions. The chatbot detects the sentiment of user inputs and offers gentle, structured prompts to help reframe negative thoughts and encourage healthier thinking patterns.
+
+## Key Features
+ - Sentiment Analysis: Identifies whether the user’s statements are sad, anxious, angry, or neutral/happy.
+ - CBT-Inspired Prompts: Offers suggestions or questions to challenge unhelpful thoughts (e.g., “What evidence do you have that this thought is true?”).
+ - Session Tracking: (Optional) Remembers previous conversations to provide more personalized responses.
+ - Voice & Text Support: (Optional) Uses speech-to-text and text-to-speech capabilities to make interaction more natural.
+ - Secure Data Storage: (Optional) Leverages blockchain or a secure database to store interactions, ensuring privacy.
+
+## How It Works
+ - User Input: The user types (or speaks) a statement about how they’re feeling.
+ - Sentiment Detection: The chatbot analyzes the text to determine the emotional tone (e.g., sadness, worry, frustration).
+ - Structured Response: Based on the sentiment, the agent uses CBT-inspired techniques to craft a supportive, reflective reply.
+For example: If the user says, “I feel like a failure,” the chatbot might respond by asking, “Could you tell me about a time you were successful, even if it was small?”
+ 0 Follow-Up Questions: The chatbot continues with open-ended prompts to guide the user toward reframing negative thoughts.
+ - User Reflection: The conversation continues as the user shares more, with the chatbot providing empathy, validation, and gentle guidance.
+
 
 This application's logic is written in [Rust](https://internetcomputer.org/docs/current/developer-docs/backend/rust/).
 
@@ -16,28 +46,3 @@ The `/backend` folder contains the Rust smart contract:
 
 The `/frontend` folder contains web assets for the application's user interface. The user interface is written using the React framework.
 
-## Continue building locally
-
-To migrate your ICP Ninja project off of the web browser and develop it locally, follow these steps.
-
-### 1. Download your project from ICP Ninja using the 'Download files' button.
-
-### 2. Setting up Ollama
-
-To be able to test the agent locally, you'll need a server for processing the agent's prompts. For that, we'll use `ollama`, which is a tool that can download and serve LLMs.
-See the documentation on the [Ollama website](https://ollama.com/) to install it. Once it's installed, run:
-
-```
-ollama serve
-# Expected to start listening on port 11434
-```
-
-The above command will start the Ollama server, so that it can process requests by the agent. Additionally, and in a separate window, run the following command to download the LLM that will be used by the agent:
-
-```
-ollama run llama3.1:8b
-```
-
-The above command will download an 8B parameter model, which is around 4GiB. Once the command executes and the model is loaded, you can terminate it. You won't need to do this step again.
-
-### 3. Open the `BUILD.md` file for further instructions.

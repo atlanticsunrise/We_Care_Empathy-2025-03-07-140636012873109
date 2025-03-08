@@ -10,9 +10,6 @@ A friendly chatbot that listens to user feelings, detects sentiment, and respond
 - Key Features
 - How It Works
 - Project Structure
-- Usage
-- Structured Prompting & CBT
-- Disclaimer
 - Contributing
 
 
@@ -45,4 +42,8 @@ The `/backend` folder contains the Rust smart contract:
 - `lib.rs`, which contains the actual smart contract, and exports its interface
 
 The `/frontend` folder contains web assets for the application's user interface. The user interface is written using the React framework.
+
+ ## Contributing
+ Vanessa Saunders
+ Misty Waters
 
